@@ -1,19 +1,15 @@
-<title>WebApp do Telegram</title> Pressione-me
-<script>
-    document.getElementById('botao').addEventListener('click', () => {
-        // Simulando um arquivo JSON como resposta
-        const data = {
-            mensagem: "Olá, mundo!",
-            outroCampo: "Valor do campo"
-        };
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+</head>
+<body>
+    <p>Welcome!</p>
+</body>
 
-        // Enviando a resposta como JSON
-        fetch('/resposta-json', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        });
-    });
+<script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+data-preference-id="441861746-953dc737-7444-4120-bca5-9baccd3cb46f" data-source="button">
 </script>
+
+</html>
